@@ -16,12 +16,12 @@ socket.on('newMessage', function(message) {
   $('#messages').append(li);
 });
 
-socket.emit('createMessage', {
-  from: 'Frank',
-  text: 'Hi'
-}, function(data) {
-  console.log('Got it', data);
-});
+// socket.emit('createMessage', {
+//   from: 'Frank',
+//   text: 'Hi'
+// }, function(data) {
+//   console.log('Got it', data);
+// });
 
 $('#message-form').submit(function(e) {
   e.preventDefault();
